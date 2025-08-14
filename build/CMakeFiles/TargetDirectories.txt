@@ -1,0 +1,4 @@
+/home/a/elaborato_so_alessia_gennari_VR488137/build/CMakeFiles/server.dir
+/home/a/elaborato_so_alessia_gennari_VR488137/build/CMakeFiles/client.dir
+/home/a/elaborato_so_alessia_gennari_VR488137/build/CMakeFiles/edit_cache.dir
+/home/a/elaborato_so_alessia_gennari_VR488137/build/CMakeFiles/rebuild_cache.dir

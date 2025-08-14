@@ -1,0 +1,72 @@
+% !TEX encoding = UTF-8
+\documentclass[a4paper, titlepage, 12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Relazione SO 2025},
+}
+
+\title{Relazione SO 2025}
+\author{Alessia Gennari - VR488137, Mattia Pacchin - VR461870}
+\date{08/2025}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Descrizione del progetto}
+
+In questo progetto implementeremo le specifiche dell'opzione 2 (Pthread e FIFO su Linux / macOS).
+
+\section{Specifiche richieste - Opzione 2}
+
+Modello di trasferimento: il client invia al server il percorso del file e riceve l'impronta.
+
+Per la sufficienza:
+\begin{enumerate}
+    \item Implementare server che riceve richieste ed invia risposte, usando FIFO
+    \item Implementare client che invia richiesta e riceve risposta, usando FIFO
+    \item Istanziare thread distinti per elaborare richieste multiple in modo concorrente
+\end{enumerate}
+
+Per arrivare al massimo voto:
+\begin{enumerate}
+    \item Schedulare le richieste pendenti in ordine di dimensione del file
+    \item Introdurre un limite al numero di thread in esecuzione fissato
+    \item Implementare il caching in memoria delle coppie percorso-hash già servite, così da restituire i valori computati nel caso di percorsi ripetuti
+    \item Gestire richieste multiple simultanee per un dato percorso processando una sola richiesta ed attendendo il risultato nelle restanti richieste
+\end{enumerate}
+
+\section{Scelte implementative}
+
+%\begin{figure}[!ht]
+%    \includegraphics[width=\linewidth]{../img/img.png}
+%    \caption{image name}
+%    \label{fig:imgName}
+%\end{figure}
+
+\subsection{Librerie}
+\begin{itemize}
+    \item OpenSSL
+\end{itemize}
+
+\subsection{Funzionamento dettagliato}
+
+Qua ci andrà una descrizione del funzionamento dettagliato.
+
+\subsubsection{Questa è una sotto-sotto-sezione}
+
+Sotto sotto.
+
+\section{Difficoltà riscontrate}
+
+Ancora nessuna. Speriamo continui così.
+
+\end{document}
