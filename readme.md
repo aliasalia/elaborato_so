@@ -1,4 +1,4 @@
-# Repo for OS project - Year 2025
+# Repo per il progetto di SO
 
 ## Implementazione di **Specifiche opzione 2 (Pthread e FIFO su Linux / macOS)**
 
@@ -16,11 +16,3 @@ Per arrivare al massimo voto:
 - Introdurre un limite al numero di thread in esecuzione fissato
 - Implementare il caching in memoria delle coppie percorso-hash già servite, così da restituire i valori computati nel caso di percorsi ripetuti
 - Gestire richieste multiple simultanee per un dato percorso processando una sola richiesta ed attendendo il risultato nelle restanti richieste
-
-## Compilazione del progetto
-
-1. Spostarsi nella cartella principale os_project_2025
-2. Creare la cartella *build* -> `mkdir build`
-3. Spostarsi in *build* -> `cd build`
-4. Lanciare il comando `cmake ..`
-5. Compilare con `make`
